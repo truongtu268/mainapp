@@ -1,0 +1,20 @@
+{
+  "presets": ["latest", "react", "stage-0"],
+  "plugins": [
+    "syntax-dynamic-import",
+    "dynamic-import-webpack",
+    ["import", { "libraryName": "antd", "style": "css" }]
+  ],
+  "env": {
+    "production": {
+      "only": ["app"],
+      "plugins": [
+        "transform-react-remove-prop-types",
+        "transform-react-constant-elements",
+      ]
+    },
+    "development": {
+      "presets": ["react-hmre"]
+    }
+  }
+}

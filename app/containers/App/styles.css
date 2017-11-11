@@ -1,0 +1,9 @@
+.App {
+  display: block;
+  min-height: 100%;
+  font-size: 14px;
+}
+
+.App > :global(.ant-layout) {
+  min-height: 100vh;
+}

@@ -1,0 +1,36 @@
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+import { connect } from 'react-redux'
+import {{ properCase name }} from '../../components/{{ properCase name }}/{{ properCase name }}'
+{{#if wantActionsAndReducer}}
+import getStateSelector from './selectors'
+{{/if}}
+
+{{#if wantActionsAndReducer}}
+const mapStateToProps = (state) => getStateSelector(state)
+{{/if}}
+
+// Return dipacth action immediately
+const mapDispatchToProps = (dispatch) => ({
+  dispatch,
+})
+
+const propTypes = {
+  // ... propTypes list
+}
+
+class {{ properCase name }}Container extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <{{ properCase name }} />
+    )
+  }
+}
+
+{{ properCase name }}Container.propTypes = propTypes
+
+export default connect(mapStateToProps, mapDispatchToProps)({{ properCase name }}Container)

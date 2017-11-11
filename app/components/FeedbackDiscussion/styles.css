@@ -1,0 +1,66 @@
+/* Begin style */
+.header {
+  /* empty */
+}
+
+.title {
+  font-size: 22px;
+  color: black;
+  font-weight: bold;
+}
+
+.stats {
+  display: inline-block;
+  margin-left: 15px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.interactAction {
+  display: inline-block;
+  margin-right: 30px;
+  font-weight: bold;
+}
+
+.interactAction :global(.ant-anchor-link) {
+  display: inline-block;
+  padding: 0;
+}
+
+.actionList :global(a) {
+  color: rgba(0, 0, 0, 0.65);
+}
+
+.actionList :global(.voted) a {
+  color: #108EE9;
+}
+
+.interactAction:global(.voted) {
+  color: #108EE9;
+}
+
+.actionList :global(a):hover {
+  text-decoration: underline;
+}
+
+.listVoteLatest {
+  display: table;
+  margin-top: 10px;
+}
+
+.listVoteLatest :global(.ant-avatar) {
+  border: 2px solid #FFF;
+  margin-left: -10px;
+  line-height: auto;
+  float: left;
+}
+
+.listVoteLatest :global(.ant-avatar):first-child {
+  margin-left: 0;
+}
+
+.listVoteLatestCount {
+  display: inline-block;
+  height: 32px;
+  line-height: 32px;
+  float: left;
+}

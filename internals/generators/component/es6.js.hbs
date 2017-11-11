@@ -1,0 +1,30 @@
+import React, { Component } from 'react'
+import PropTypes from 'prop-types'
+{{#if wantCSS}}
+import styles from './styles.css'
+{{/if}}
+
+const propTypes = {
+  // ... propTypes list
+}
+
+class {{ properCase name }} extends Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      {{#if wantCSS}}
+      <div className={{curly true}}styles.{{ camelCase name }}{{curly}}>
+      {{else}}
+      <div>
+      {{/if}}
+      </div>
+    )
+  }
+}
+
+{{ properCase name }}.propTypes = propTypes
+
+export default {{ properCase name }}

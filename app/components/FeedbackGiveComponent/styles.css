@@ -1,0 +1,18 @@
+.feedbackGiveComponent {
+  /* stylelint-disable */
+}
+
+.breakline {
+  width: 100%;
+  border-bottom: 1px solid #eee;
+  margin: 15px 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content {
+  font-size: 20px;
+}

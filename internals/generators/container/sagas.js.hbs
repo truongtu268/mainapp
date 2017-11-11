@@ -1,0 +1,17 @@
+import { call, put } from 'redux-saga/effects'
+import { takeLatest } from 'redux-saga'
+import { SAGA_ACTION } from '../../constants'
+
+function* watchSagaAction() {
+  yield* takeLatest(SAGA_ACTION, sagaAction)
+}
+
+function* sagaAction() {
+	return
+}
+
+// All sagas are loaded
+// Return an array and variables name should have `watch` as prefix
+export default [
+  watchSagaAction,
+]

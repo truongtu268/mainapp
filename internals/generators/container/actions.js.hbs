@@ -1,0 +1,22 @@
+import {
+  SAGA_ACTION,
+  REDUCER_ACTION,
+} from '../../constants'
+
+/**
+ * all actions that sagas.js will listen
+ */
+export function sagaAction() {
+  return {
+    type: SAGA_ACTION,
+  }
+}
+
+/**
+ * all actions that impact Redux
+ */
+export function reducerAction() {
+  return {
+    type: REDUCER_ACTION,
+  }
+}

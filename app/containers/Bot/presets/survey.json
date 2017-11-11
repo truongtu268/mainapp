@@ -1,0 +1,42 @@
+{
+  "call_api": {
+    "id": "call_api",
+    "meaningKey": null,
+    "type": 1,
+    "message": "Survey",
+    "isUser": true,
+    "trigger": null
+  },
+  "error": {
+    "id": "error",
+    "meaningKey": null,
+    "type": 1,
+    "message": "Xin lỗi, đã xảy ra lỗi. Vui lòng thực hiện lại! 😖",
+    "isUser": false,
+    "trigger": "init"
+  },
+  "cancel": {
+    "id": "cancel",
+    "meaningKey": null,
+    "type": 1,
+    "message": "Bạn đã huỷ lệnh!",
+    "isUser": false,
+    "trigger": "init"
+  },
+  "submit": {
+    "id": "submit",
+    "meaningKey": null,
+    "type": 1,
+    "message": "Cám ơn bạn! Yêu cầu đã được gửi 👍",
+    "isUser": false,
+    "trigger": "init2"
+  },
+  "init2": {
+    "id": "init2",
+    "meaningKey": 1,
+    "type": 1,
+    "message": "Bạn có muốn làm gì nữa không? 😃",
+    "isUser": false,
+    "trigger": "call_api"
+  }
+}

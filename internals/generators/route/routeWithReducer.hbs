@@ -1,0 +1,23 @@
+ {
+      path: '{{ path }}',
+      name: '{{ camelCase component }}Container',
+      getComponent(nextState, cb) {
+        const importModules = Promise.all([
+          {{#if useSagas}}
+          System.import('containers/{{ properCase component }}/sagas'),
+          {{/if}}
+          System.import('containers/{{ properCase component }}/{{ camelCase component }}Container'),
+        ]);
+
+        const renderRoute = loadModule(cb);
+
+        importModules.then(([{{#if useSagas}} sagas,{{/if}} component]) => {
+          {{#if useSagas}}
+          injectSagas('{{ camelCase component }}Container', sagas.default);
+          {{/if}}
+          renderRoute(component);
+        });
+
+        importModules.catch(errorLoading);
+      },
+    },$1

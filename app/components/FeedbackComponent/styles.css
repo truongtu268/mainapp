@@ -1,0 +1,18 @@
+.btnNewFeedback {
+  margin-right: 15px;
+  margin-bottom: 10px;
+}
+
+.listFilterHeader {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.alistFilterHeader :global(.ant-steps-tail) {
+  display: none;
+}
+
+.listFilterHeader :global(.ant-steps-item) {
+  width: auto !important;
+  margin-right: 15px !important;
+}

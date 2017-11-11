@@ -1,0 +1,12 @@
+import { createSelector } from 'reselect'
+
+// maybe you don't need selector, but if you need it
+// follow State object in appredux/index & appredux/modules
+const select{{ properCase name }} = (state) => state.{{ camelCase name }}
+
+const getStateSelector = createSelector(
+  [select{{ properCase name }}],
+  (substate) => ({ substate })
+)
+
+export default getStateSelector

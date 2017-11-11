@@ -1,0 +1,56 @@
+{
+  "init": {
+    "id": "init",
+    "meaningKey": 1,
+    "type": 1,
+    "message": "Xin chào 👋 Tadaa có thể giúp gì cho bạn?",
+    "answerList": [],
+    "isUser": false,
+    "trigger": "call_api"
+  },
+  "init2": {
+    "id": "init2",
+    "meaningKey": 1,
+    "type": 1,
+    "message": "Bạn có muốn làm gì nữa không? 😃",
+    "answerList": [],
+    "isUser": false,
+    "trigger": "call_api"
+  },
+  "call_api": {
+    "id": "call_api",
+    "meaningKey": null,
+    "type": 1,
+    "message": null,
+    "answerList": [],
+    "isUser": true,
+    "trigger": null
+  },
+  "error": {
+    "id": "error",
+    "meaningKey": null,
+    "type": 1,
+    "message": "Xin lỗi, đã xảy ra lỗi. Vui lòng thực hiện lại! 😖",
+    "answerList": [],
+    "isUser": false,
+    "trigger": "init"
+  },
+  "cancel": {
+    "id": "cancel",
+    "meaningKey": null,
+    "type": 1,
+    "message": "Bạn đã huỷ lệnh!",
+    "answerList": [],
+    "isUser": false,
+    "trigger": "init2"
+  },
+  "submit": {
+    "id": "submit",
+    "meaningKey": null,
+    "type": 1,
+    "message": "Cám ơn bạn! Yêu cầu đã được gửi 👍",
+    "answerList": [],
+    "isUser": false,
+    "trigger": "init2"
+  }
+}

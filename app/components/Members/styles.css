@@ -1,0 +1,13 @@
+/* Members */
+
+.membersComponent :global(.ant-tabs-nav-animated) {
+  margin: 0 auto;
+  float: none;
+  display: table;
+}
+
+.membersComponent :global(.ant-tabs-tab) {
+  margin-right: 0;
+}
+
+/* ListMembers */
